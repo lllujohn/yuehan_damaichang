@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="container-custom">
-        <div className="text-center max-w-4xl mx-auto animate-fade-in">
+        <div className="text-center max-w-4xl mx-auto">
           {/* 主标题 */}
           <h1 className="heading-xl mb-6">
             让闲置
@@ -31,7 +31,7 @@ export default function Hero() {
           {/* 搜索框 */}
           <form
             onSubmit={handleSearch}
-            className="max-w-2xl mx-auto mb-8 animate-slide-up"
+            className="max-w-2xl mx-auto mb-8"
           >
             <div className="relative">
               <input

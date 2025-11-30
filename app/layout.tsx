@@ -5,16 +5,17 @@ export const metadata: Metadata = {
   title: '约翰大卖场 - 简约可信的校园交易平台',
   description: '专为大学生打造的二手交易平台，智能推荐，安全可靠',
   keywords: '校园二手,二手交易,学生市场,闲置物品',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.NodeNode
 }) {
   return (
     <html lang="zh-CN">
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   )
 }
