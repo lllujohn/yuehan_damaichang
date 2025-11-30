@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  /* Apple 风格按钮 */
+  .btn-primary {
+    @apply px-6 py-3 bg-blue-600 text-white rounded-full font-medium 
+           hover:bg-blue-700 transition-all duration-300 
+           shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-blue-600 border border-blue-600 
+           rounded-full font-medium hover:bg-blue-50 
+           transition-all duration-300;
+  }
+  
+  /* Apple 风格卡片 */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-xl 
+           transition-all duration-500 overflow-hidden;
+  }
+  
+  /* 容器 */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* 输入框 */
+  .input-custom {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 
+           focus:border-blue-500 focus:ring-2 focus:ring-blue-200 
+           transition-all duration-300 outline-none;
+  }
+  
+  /* 标题样式 */
+  .heading-xl {
+    @apply text-5xl md:text-7xl font-bold tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+  
+  .heading-md {
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+  
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-lg;
+  }
+}
