@@ -98,7 +98,7 @@ export default function Footer() {
 
         {/* 底部版权 */}
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>&copy; 2025 约翰校园二手市场. 保留所有权利.</p>
+          <p>&copy; 2025 信大校园二手市场. 保留所有权利.</p>
         </div>
       </div>
     </footer>

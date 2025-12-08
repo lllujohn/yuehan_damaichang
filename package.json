@@ -1,7 +1,7 @@
 {
   "name": "yuehan-damaichang",
   "version": "1.0.0",
-  "description": "约翰大卖场 - 校园二手交易平台",
+  "description": "信大大卖场 - 校园二手交易平台",
   "private": true,
   "scripts": {
     "dev": "next dev",
